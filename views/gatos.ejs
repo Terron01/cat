@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('shared/head') %>
+<body>
+    <%- include('shared/header') %>
+    <section class="gatos">
+        <h2>Gatos para Locação</h2>
+        
+        <div class="container">
+            <% for(let gato of gatos){ %>
+                <div>
+                    <img src="<%= gato.img %>" alt="">
+                    <h3><%= gato.nome %></h3>
+                </div>
+            <% } %>
+        </div>
+        
+    </section>
+</body>
+</html>
